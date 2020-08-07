@@ -34,17 +34,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         let view = touch.view
-        
-        if gestureRecognizer == getureOne {
-            if view == viewTwo {
-                return true
-            }
+       
+        if view != viewThree {
             return true
         }
-        if view == viewTwo {
-            return true
-        }
-        
         return false
     }
     
